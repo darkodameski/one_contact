@@ -5,7 +5,16 @@
     margin: $null
 
 =boxSize($box)
-    box-sizing: $box
     -webkit-box-sizing: $box
     -o-box-sizing: $box
     -moz-box-sizing: $box
+    -ms-box-sizing: $box
+    box-sizing: $box
+
+=noSelect($no)
+    -webkit-touch-callout: $no
+    -webkit-user-select: $no
+    -khtml-user-select: $no
+    -moz-user-select: $no
+    -ms-user-select: $no
+    user-select: $no

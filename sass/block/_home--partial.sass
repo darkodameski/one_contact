@@ -15,3 +15,30 @@
     
     .universal__layer
         @extend %layer
+
+        .home__text--container
+            background: blue
+            position: absolute
+            left: 13vw
+            right: 13vw
+            margin: (500px / 2) auto
+            text-align: center
+            color: $textMainColor
+            font-size: ($defaultFontSize * 2)
+            font-stretch: 1em
+            font-family: sans-serif
+            font-weight: light
+            line-height: ($defaultTextLine * 1.4)
+            text-transform: capitalize
+            word-wrap: break-word
+
+            h1.home__text--container--mainTitle
+                //font-family: mainFont__Regular 
+                font-family: 'Montserrat', sans-serif
+
+    .menu__navbar
+        width: $screenInPercentage
+        padding: 2em 0
+        background: $mainColorBlue
+        position: fixed
+        z-index: 999999999

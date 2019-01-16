@@ -1,3 +1,18 @@
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
 /* line 3, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
 #home {
   background-position: center center;
@@ -11,7 +26,10 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  background-color: rgba(255, 0, 0, 0.5); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 153, 255, 0.2)), to(rgba(255, 255, 255, 0.3)));
+  background: -webkit-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
+  background: -o-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3)); }
 
 /* line 5, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 p ol ul li dl dt dd blockquote figure fieldset legend textarea pre iframe hr {
@@ -37,35 +55,57 @@ button input select textarea {
 html body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: 0;
+  -webkit-user-select: 0;
+  -khtml-user-select: 0;
+  -moz-user-select: 0;
+  -ms-user-select: 0;
+  user-select: 0; }
 
-/* line 23, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 24, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 * *:before *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
-/* line 26, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 27, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 img embed iframe object audio video {
   height: auto;
   max-width: 100%; }
 
-/* line 30, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 31, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 iframe {
   border: 0; }
 
-/* line 33, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 34, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 37, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 38, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 td th {
   padding: 0;
   text-align: left; }
 
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
 /* line 3, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
 #home {
   background-position: center center;
@@ -79,7 +119,10 @@ td th {
   padding: 0;
   margin: 0;
   position: absolute;
-  background-color: rgba(255, 0, 0, 0.5); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 153, 255, 0.2)), to(rgba(255, 255, 255, 0.3)));
+  background: -webkit-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
+  background: -o-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3)); }
 
 /* line 6, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
 #home {
@@ -91,8 +134,77 @@ td th {
   position: relative;
   background: #66cc99;
   background-image: url("..//images/wallpaper/banner-bg.jpg"); }
+  /* line 19, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+  #home .universal__layer .home__text--container {
+    background: blue;
+    position: absolute;
+    left: 13vw;
+    right: 13vw;
+    margin: 250px auto;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-stretch: 1em;
+    font-family: sans-serif;
+    font-weight: light;
+    line-height: 1.4em;
+    text-transform: capitalize;
+    word-wrap: break-word; }
+    /* line 35, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+    #home .universal__layer .home__text--container h1.home__text--container--mainTitle {
+      font-family: "Montserrat", sans-serif; }
+  /* line 39, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+  #home .menu__navbar {
+    width: 100%;
+    padding: 2em 0;
+    background: #3399ff;
+    position: fixed;
+    z-index: 999999999; }
 
-/* line 6, ../../../Desktop/one_contact/sass/mainStyle.sass */
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+@font-face {
+  font-family: mainFont__Regular;
+  font-family: mainFont__Medium;
+  font-family: mainFont__Light;
+  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+/* line 3, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
+#home {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* line 8, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
+#home .universal__layer {
+  width: 100%;
+  height: inherit;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 153, 255, 0.2)), to(rgba(255, 255, 255, 0.3)));
+  background: -webkit-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
+  background: -o-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3)); }
+
+/* line 6, ../../../Desktop/one_contact/sass/block/_info--partial.sass */
+#info {
+  max-width: 100vw;
+  width: 100%;
+  height: 700px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: white; }
+
+/* line 7, ../../../Desktop/one_contact/sass/mainStyle.sass */
 body {
   background: #2d8659; }
 
