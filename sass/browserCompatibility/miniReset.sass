@@ -1,0 +1,39 @@
+@import toolKit/tools
+
+@import buildingBlocks/blocks
+
+p ol ul li dl dt dd blockquote figure fieldset legend textarea pre iframe hr
+  +boxModel(0)
+
+h1 h2 h3 h4 h5 h6 
+  font-size: 100%
+  font-weight: normal
+  +boxModel(0)
+
+ul 
+  list-style: none
+
+button input select textarea
+  margin: 0
+
+html body
+  +boxModel(0)
+  +boxSize(border-box)
+
+* *:before *:after
+  box-sizing: inherit
+
+img embed iframe object audio video
+  height: auto
+  max-width: 100%
+
+iframe
+  border: 0
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td th
+  padding: 0
+  text-align: left

@@ -1,0 +1,17 @@
+/// variables, colors & typography \\\
+@import toolKit/tools
+/// mixins, inheritance \\\
+@import buildingBlocks/blocks
+
+#home
+    max-width: $widthMax
+    width: $screenInPercentage
+    height: 700px
+    +boxModel(0)
+    position: relative
+    background: rgb(102, 204, 153)
+    background-image: url("..//images/wallpaper/banner-bg.jpg")
+    @extend %background
+    
+    .universal__layer
+        @extend %layer
