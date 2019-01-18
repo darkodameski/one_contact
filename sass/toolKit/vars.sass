@@ -6,9 +6,8 @@ $defaultFontSize: 1em
 $defaultTextLine: 1em
 
 /// media Queries units \\\
-$webKit-ratio: 2
-$portrait: portrait
-$landscape: landscape
+$orientation-port: portrait
+$orientation-land: landscape
 
 $min-width: min-device-width
 $max-width: max-device-width
@@ -16,27 +15,56 @@ $max-width: max-device-width
 $custom-device-width: device-width
 $custom-device-height: device-height
 
-$minUnit-on-mini-devices: 320px
-$maxUnit-on-mini-devices: 480px
+$minUnit-on-mini-devices: 20em
+$maxUnit-on-mini-devices: 30em
 
-$minUnit-on-medium-devices: 768px
-$maxUnit-on-medium-devices: 1024px
+$minUnit-on-medium-devices: 48em
+$maxUnit-on-medium-devices: 64em
 
-$minUnit-on-medium-custom-devices: 800px
-$maxUnit-on-medium-custom-devices: 1280px
+$minUnit-on-medium-custom-devices: 50em
+$maxUnit-on-medium-custom-devices: 80em
 
-$minUnit-on-maxium-devices: 1200px
-$maxUnit-on-maximum-devices: 1600px
+$minUnit-on-maximum-devices: 75em
+$maxUnit-on-maximum-devices: 100em
+
+$minUnit-on-extraLarge-width-devices: 96em
+$maxUnit-on-extraLarge-height-devices: 128em
 
 /// custom devices \\\
-$568-custom: 568px
-$375-custom: 375px
-$667-custom: 667px
-$640-custom: 640px
-$360-custom: 360px
-$414-custom: 414px
-$812-custom: 812px
-$601-custom: 601px
-$736-custom: 736px
-
+$customMediaUnit-568: 35.5em
+$customMediaUnit-375: 23.4375em
+$customMediaUnit-667: 41.6875em
+$customMediaUnit-640: 40em
+$customMediaUnit-360: 22.5em
+$customMediaUnit-414: 25.875em
+$customMediaUnit-812: 50.75em
+$customMediaUnit-601: 37.5625em
+$customMediaUnit-736: 46em
+$customMediaUnit-834: 52.125em
+$customMediaUnit-906: 56.625em
+$customMediaUnit-1112: 69.5em
+$customMediaUnit-1336: 83.5em
 /////////////  \\\\\\\\\\\\\
+
+/// breakpoints \\\
+
+/// for Small Devices \\\
+$small-screen-default: "only screen and ($min-width: $minUnit-on-mini-devices) and ($max-width: $maxUnit-on-mini-devices) and (orientation: $orientation-port) and (orientation: $orientation-land)"
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+$small-screen-default-iPhone5-5S-5C-5SE: screen and ($min-width: $minUnit-on-mini-devices) and ($max-width: $customMediaUnit-568) and (orientation: $orientation-port) and (orientation: $orientation-land)
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+$small-screen-default-iPhone6-6S-7-8: screen and ($min-width: $customMediaUnit-375) and ($max-width: $customMediaUnit-667) and (orientation: $orientation-port)and (orientation: $orientation-land)
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */ 
+$small-screen-default-iPhone6-7-8: screen and ($min-width: $customMediaUnit-414) and ($max-width: $customMediaUnit-736)
+$small-screen-portrait-iPhone6-7-8: screen and ($min-width: $customMediaUnit-414) and ($max-width: $customMediaUnit-736) and (orientation: $orientation-port) 
+$small-screen-landscape-iPhone6-7-8: screen and ($min-width: $customMediaUnit-414) and ($max-width: $customMediaUnit-736) and (orientation: $orientation-land) 
+/* ----------- iPhone X ----------- */
+$small-screen-default-iPhone6-7-8: screen and ($min-width: $customMediaUnit-375) and ($max-width: $customMediaUnit-812) 
+$small-screen-portrait-iPhone6-7-8: screen and ($min-width: $customMediaUnit-375) and ($max-width: $customMediaUnit-812) and (orientation: $orientation-port) 
+$small-screen-landscape-iPhone6-7-8: screen and ($min-width: $customMediaUnit-375) and ($max-width: $customMediaUnit-812) and (orientation: $orientation-land)
+/////////////  \\\\\\\\\\\\\
+//$medium-screen: "only screen and (min-width: 321px) and (max-width: 719px)"
+//$big-screen: "only screen and (min-width: 720px) and (max-width: 1024px)"
