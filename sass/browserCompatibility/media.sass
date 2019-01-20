@@ -3,333 +3,102 @@
 /// mixins, inheritance \\\
 @import buildingBlocks/blocks
 
-/// Phones & Handhelds Category \\\
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and $orientation-land */
-@media #{$small-screen-default}
+//@media #{$small-screen-default}
+/* Smartphones ($orient-port and $orient-land) ----------- */
+@media only screen and ($min-width-on-device : $min-on-mini-devices) and ($max-width-on-device : $max-on-mini-devices)
 
 
+/* Smartphones ($orient-land) ----------- */
+@media only screen and ($custom-device-width : ($min-on-mini-devices + 0.0625em))
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait and $orientation-land */
-@media #{$small-screen-default-iPhone5-5S-5C-5SE}
 
+/* Smartphones ($orient-port) ----------- */
+@media only screen and ($custom-device-max-width : $min-on-mini-devices)
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and $orientation-land */
-@media #{$small-screen-default-iPhone6-6S-7-8}
 
+/* iPads ($orient-port and $orient-land) ----------- */
+@media only screen and ($min-width-on-device : $min-on-medium-devices) and ($max-width-on-device : $max-on-medium-devices)
 
-/* Portrait */
-@media #{$small-screen-portrait-iPhone6-6S-7-8}
 
+/* iPads ($orient-land) ----------- */
+@media only screen and ($min-width-on-device : $min-on-medium-devices) and ($max-width-on-device : $max-on-medium-devices) and (orientation : $orient-land)
 
-/* $orientation-land */
-@media #{$small-screen-landscape-iPhone6-6S-7-8}
 
+/* iPads ($orient-port) ----------- */
+@media only screen and ($min-width-on-device : $min-on-medium-devices) and ($max-width-on-device : $max-on-medium-devices) and (orientation : $orient-port)
 
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and $orientation-land */
-@media #{$small-screen-default-iPhone6-7-8}
+/********** iPad 3 **********/
+@media only screen and ($min-width-on-device : $min-on-medium-devices) and ($max-width-on-device : $max-on-medium-devices) and (orientation : $orient-land) and (-webkit-min-device-pixel-ratio : 2)
 
 
-/* Portrait */
-@media #{$small-screen-portrait-iPhone6-7-8}
+@media only screen and ($min-width-on-device : $min-on-medium-devices) and ($max-width-on-device : $max-on-medium-devices) and (orientation : $orient-port) and (-webkit-min-device-pixel-ratio : 2)
 
+/* Desktops and laptops ----------- */
+@media only screen  and ($custom-device-width : $min-on-medium-custom-devices)
 
-/* $orientation-land */
-@media #{$small-screen-landscape-iPhone6-7-8}
 
+/* Large screens ----------- */
+@media only screen  and ($custom-device-width : $max-on-medium-custom-devices)
 
-/* ----------- iPhone X ----------- */
-/* Portrait and $orientation-land */
-@media #{$small-screen-default-iPhone6-7-8}
 
+/* iPhone 4 ----------- */
+@media only screen and ($min-width-on-device : $min-on-mini-devices) and ($max-width-on-device : $max-on-mini-devices) and (orientation : $orient-land) and (-webkit-min-device-pixel-ratio : 2)
 
-/* Portrait */
-@media #{$small-screen-portrait-iPhone6-7-8}
 
+@media only screen and ($min-width-on-device : $min-on-mini-devices) and ($max-width-on-device : $max-on-mini-devices) and (orientation : $orient-port) and (-webkit-min-device-pixel-ratio : 2)
 
-/* $orientation-land */
-@media #{$small-screen-landscape-iPhone6-7-8}
 
+/* iPhone 5 ----------- */
+@media only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-height-on-device: $customMediaUnit-568) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 2)
 
-/* ----------- Galaxy S3 ----------- */
 
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $minUnit-on-mini-devices) and ($custom-device-height: $customMediaUnit-640) 
+@media only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-height-on-device: $customMediaUnit-568) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 2)
 
 
-/* Portrait */
-@media screen and ($custom-device-width: $minUnit-on-mini-devices) and ($custom-device-height: $customMediaUnit-640) and (orientation:$orientation-port)
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and ($min-width-on-device: $customMediaUnit-375) and ($max-height-on-device: $customMediaUnit-667) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 2)
 
 
-/* $orientation-land */
-@media screen and ($custom-device-width: $minUnit-on-mini-devices) and ($custom-device-height: $customMediaUnit-640) and (orientation: $orientation-land)
+@media only screen and ($min-width-on-device: $customMediaUnit-375) and ($max-height-on-device: $customMediaUnit-667) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 2)
 
 
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and ($min-width-on-device: $customMediaUnit-414) and ($max-height-on-device: $customMediaUnit-736) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 2)
 
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $minUnit-on-mini-devices) and ($custom-device-height: $customMediaUnit-640)  
 
+@media only screen and ($min-width-on-device: $customMediaUnit-414) and ($max-height-on-device: $customMediaUnit-736) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 2)
 
-/* Portrait */
-@media screen and ($custom-device-width: $minUnit-on-mini-devices) and ($custom-device-height: $customMediaUnit-640) and (orientation:$orientation-port) 
 
+/* iPhone X ----------- */
+@media only screen and ($min-width-on-device: $customMediaUnit-375) and ($max-height-on-device: $customMediaUnit-812) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 3)
 
-/* $orientation-land */
-@media screen and ($custom-device-width: $minUnit-on-mini-devices) and ($custom-device-height: $customMediaUnit-640) and (orientation: $orientation-land)
 
+@media only screen and ($min-width-on-device: $customMediaUnit-375) and ($max-height-on-device: $customMediaUnit-812) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 3)
 
-/* ----------- Galaxy S6 ----------- */
 
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) 
+/* iPhone XS Max, XR ----------- */
+@media only screen and ($min-width-on-device: $customMediaUnit-414) and ($max-height-on-device: $customMediaUnit-896) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 3)
 
 
-/* Portrait */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation:$orientation-port)
+@media only screen and ($min-width-on-device: $customMediaUnit-414) and ($max-height-on-device: $customMediaUnit-896) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 3)
 
 
-/* $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation: $orientation-land) 
+/* Samsung Galaxy S3 ----------- */
+@media only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-height-on-device: $customMediaUnit-640) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 2)
 
 
-/* ----------- Google Pixel ----------- */
+@media only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-height-on-device: $customMediaUnit-640) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 2)
 
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640)  
 
+/* Samsung Galaxy S4 ----------- */
+@media only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-height-on-device: $customMediaUnit-640) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 3)
 
-/* Portrait */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation:$orientation-port) 
 
+@media only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-height-on-device: $customMediaUnit-640) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 3)
 
-/* $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation: $orientation-land)
 
+/* Samsung Galaxy S5 ----------- */
+@media only screen and ($min-width-on-device: $customMediaUnit-360) and ($max-height-on-device: $customMediaUnit-640) and (orientation : $orient-land) and (-webkit-device-pixel-ratio: 3)
 
-/* ----------- Google Pixel XL ----------- */
 
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) 
-
-
-/* Portrait */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation:$orientation-port)
-
-
-/* $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation: $orientation-land) 
-
-
-/* ----------- HTC One ----------- */
-
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640)  
-
-
-/* Portrait */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation:$orientation-port) 
-
-
-/* $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-360) and ($custom-device-height: $customMediaUnit-640) and (orientation: $orientation-land) 
-
-
-/* ----------- Windows Phone ----------- */
-
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $maxUnit-on-mini-devices) and ($custom-device-height: $minUnit-on-medium-custom-devices)
-
-
-/* Portrait */
-@media screen and ($custom-device-width: $maxUnit-on-mini-devices) and ($custom-device-height: $minUnit-on-medium-custom-devices) and (orientation:$orientation-port) 
-
-
-/* $orientation-land */
-@media screen and ($custom-device-width: $maxUnit-on-mini-devices) and ($custom-device-height: $minUnit-on-medium-custom-devices) and (orientation: $orientation-land)
-
-
-
-
-
-
-
-
-/// Tablets Category \\\
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and $orientation-land */
-@media only screen and ($min-width: $minUnit-on-medium-devices) and ($max-width: $maxUnit-on-medium-devices) 
-
-
-/* Portrait */
-@media only screen and ($min-width: $minUnit-on-medium-devices) and ($max-width: $maxUnit-on-medium-devices) and (orientation:$orientation-port)
-
-
-/* $orientation-land */
-@media only screen and ($min-width: $minUnit-on-medium-devices) and ($max-width: $maxUnit-on-medium-devices) and (orientation: $orientation-land)
-
-
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-/* Portrait and $orientation-land */
-@media only screen and ($min-width: $minUnit-on-medium-devices) and ($max-width: $maxUnit-on-medium-devices)  
-
-
-/* Portrait */
-@media only screen and ($min-width: $minUnit-on-medium-devices) and ($max-width: $maxUnit-on-medium-devices) and (orientation:$orientation-port)  
-
-
-/* $orientation-land */
-@media only screen and ($min-width: $minUnit-on-medium-devices) and ($max-width: $maxUnit-on-medium-devices) and (orientation: $orientation-land) 
-
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and $orientation-land */
-@media only screen and ($min-width: $customMediaUnit-834) and ($max-width:$customMediaUnit-1112)
-
-
-/* Portrait */
-
-@media only screen and ($min-width: $customMediaUnit-834) and ($max-width: $customMediaUnit-834) and (orientation:$orientation-port) 
-
-
-/* $orientation-land */
-
-@media only screen and ($min-width:$customMediaUnit-1112) and ($max-width:$customMediaUnit-1112) and (orientation: $orientation-land)  
-
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and $orientation-land */
-@media only screen and ($min-width: $maxUnit-on-medium-devices) and ($max-width: $customMediaUnit-1336)
-
-
-/* Portrait */
-
-@media only screen and ($min-width: $maxUnit-on-medium-devices) and ($max-width: $maxUnit-on-medium-devices) and (orientation:$orientation-port) 
-
-
-/* $orientation-land */
-
-@media only screen and ($min-width: $customMediaUnit-1336) and ($max-width: $customMediaUnit-1336) and (orientation: $orientation-land) 
-
-
-/* ----------- Galaxy Tab 2 ----------- */
-
-/* Portrait and $orientation-land */
-@media ($min-width: $minUnit-on-medium-custom-devices) and ($max-width: $maxUnit-on-medium-custom-devices)
-
-
-/* Portrait */
-@media ($max-width: $minUnit-on-medium-custom-devices) and (orientation:$orientation-port) 
-
-
-/* $orientation-land */
-@media ($max-width: $maxUnit-on-medium-custom-devices) and (orientation: $orientation-land) 
-
-
-/* ----------- Galaxy Tab 2 ----------- */
-
-/* Portrait and $orientation-land */
-@media ($min-width: $minUnit-on-medium-custom-devices) and ($max-width: $maxUnit-on-medium-custom-devices)
-
-
-/* Portrait */
-@media ($max-width: $minUnit-on-medium-custom-devices) and (orientation:$orientation-port)
-
-
-/* $orientation-land */
-@media ($max-width: $maxUnit-on-medium-custom-devices) and (orientation: $orientation-land) 
-
-
-/* ----------- Galaxy Tab S ----------- */
-
-/* Portrait and $orientation-land */
-@media ($min-width: $minUnit-on-medium-custom-devices) and ($max-width: $maxUnit-on-medium-custom-devices)
-
-
-/* Portrait */
-@media ($max-width: $minUnit-on-medium-custom-devices) and (orientation:$orientation-port) 
-
-
-/* $orientation-land */
-@media ($max-width: $maxUnit-on-medium-custom-devices) and (orientation: $orientation-land)  
-
-
-/* ----------- Nexus 7 ----------- */
-
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-601) and ($custom-device-height: $customMediaUnit-906)
-
-
-
-/* Portrait */
-@media screen and ($custom-device-width: $customMediaUnit-601) and ($custom-device-height: $customMediaUnit-906)and ($orientation-port)
-
-
-/* $orientation-land */
-@media screen and ($custom-device-width: $customMediaUnit-601) and ($custom-device-height: $customMediaUnit-906) and (orientation: $orientation-land) 
-
-/* ----------- Nexus 9 ----------- */
-
-/* Portrait and $orientation-land */
-@media screen and ($custom-device-width: $minUnit-on-extraLarge-width-devices) and ($custom-device-height: $maxUnit-on-extraLarge-height-devices)
-
-
-/* Portrait */
-@media screen and ($custom-device-width: $minUnit-on-extraLarge-width-devices) and ($custom-device-height: $maxUnit-on-extraLarge-height-devices) and ($orientation-port)
-
-
-/* $orientation-land */
-@media screen and ($custom-device-width: $minUnit-on-extraLarge-width-devices) and ($custom-device-height: $maxUnit-on-extraLarge-height-devices) and (orientation: $orientation-land)
-
-
-/* ----------- Kindle Fire HD 7" ----------- */
-
-/* Portrait and $orientation-land */
-@media only screen and ($min-width: $minUnit-on-medium-custom-devices) and ($max-width: $maxUnit-on-medium-custom-devices)
-
-
-/* Portrait */
-@media only screen and ($min-width: $minUnit-on-medium-custom-devices) and ($max-width: $maxUnit-on-medium-custom-devices) and (orientation:$orientation-port)
-
-/* $orientation-land */
-@media only screen and ($min-width: $minUnit-on-medium-custom-devices) and ($max-width: $maxUnit-on-medium-custom-devices) and (orientation: $orientation-land) 
-
-
-/* ----------- Kindle Fire HD 8.9" ----------- */
-
-/* Portrait and $orientation-land */
-@media only screen and ($min-width: $minUnit-on-maximum-devices) and ($max-width: $maxUnit-on-maximum-devices)
-
-
-/* Portrait */
-@media only screen and ($min-width: $minUnit-on-maximum-devices) and ($max-width: $maxUnit-on-maximum-devices) and (orientation:$orientation-port) 
-
-
-/* $orientation-land */
-@media only screen and ($min-width: $minUnit-on-maximum-devices) and ($max-width: $maxUnit-on-maximum-devices) and (orientation: $orientation-land) 
-
-
-/// Laptops Category \\\
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen and ($min-width: $minUnit-on-maximum-devices) and ($max-width: $maxUnit-on-maximum-devices)
-
-
-/* ----------- Retina Screens ----------- */
-@media screen and ($min-width: $minUnit-on-maximum-devices) and ($max-width: $maxUnit-on-maximum-devices) and (min-resolution: 192dpi) 
-
-/// Other Devices \\\
-/* ----------- Apple Watch ----------- */
-@media ($max-width: 42mm)and ($min-width: 38mm) 
-
-
-/* ----------- Moto 360 Watch ----------- */
-@media ($max-width: 218px)and ($custom-device-height: 281px) 
+@media only screen and ($min-width-on-device: $customMediaUnit-360) and ($max-height-on-device: $customMediaUnit-640) and (orientation : $orient-port) and (-webkit-device-pixel-ratio: 3)
