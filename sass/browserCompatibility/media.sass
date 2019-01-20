@@ -4,14 +4,14 @@
 @import buildingBlocks/blocks
 
 =mixin-for-phone-only()
-    @media only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-width-on-device: $max-on-mini-devices)
+    @media #{$phone-only}
         @content
    
 =mixin-for-phone-only-landscape__portrait()
-    @media only screen and ($custom-device-width: ($min-on-mini-devices + 0.0625em))
+    @media #{$phone-only-landscape__portrait--version-one}
         @content
 
-    @media only screen and ($custom-device-max-width: $min-on-mini-devices)
+    @media #{$phone-only-landscape__portrait--version-two}
         @content
 
 =mixin-for-tablet-only-landscape__portrait()
