@@ -2,7 +2,9 @@
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
-  src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
+  font-weight: normal;
+  font-style: normal;
+  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 
 
 
