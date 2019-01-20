@@ -1,25 +1,13 @@
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
@@ -103,28 +91,16 @@ td th {
   padding: 0;
   text-align: left; }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
@@ -148,28 +124,16 @@ td th {
   background: -o-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
   background: linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3)); }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
@@ -193,24 +157,6 @@ td th {
   background: -o-linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3));
   background: linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3)); }
 
-/* Smartphones ($orient-port and $orient-land) ----------- */
-/* Smartphones ($orient-land) ----------- */
-/* Smartphones ($orient-port) ----------- */
-/* iPads ($orient-port and $orient-land) ----------- */
-/* iPads ($orient-land) ----------- */
-/* iPads ($orient-port) ----------- */
-/********** iPad 3 ********* */
-/* Desktops and laptops ----------- */
-/* Large screens ----------- */
-/* iPhone 4 ----------- */
-/* iPhone 5 ----------- */
-/* iPhone 6, 7, 8 ----------- */
-/* iPhone 6+, 7+, 8+ ----------- */
-/* iPhone X ----------- */
-/* iPhone XS Max, XR ----------- */
-/* Samsung Galaxy S3 ----------- */
-/* Samsung Galaxy S4 ----------- */
-/* Samsung Galaxy S5 ----------- */
 /* line 8, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
 #home {
   max-width: 100vw;
@@ -225,8 +171,8 @@ td th {
   #home .universal__layer .home__text--container {
     background: blue;
     position: absolute;
-    left: 13vw;
-    right: 13vw;
+    left: 1vw;
+    right: 1vw;
     margin: 250px auto;
     text-align: center;
     color: white;
@@ -248,28 +194,16 @@ td th {
     position: fixed;
     z-index: 999999999; }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   src: url(..//fonts/titleFont/Montserrat-Regular.ttff); }
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* ----------- iPhone X ----------- */
 @font-face {
   font-family: mainFont__Regular;
   font-family: mainFont__Medium;
