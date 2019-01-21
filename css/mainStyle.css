@@ -50,15 +50,15 @@ h1 h2 h3 h4 h5 h6 {
   padding: 0;
   margin: 0; }
 
-/* line 13, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 15, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 ul {
   list-style: none; }
 
-/* line 16, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 18, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 button input select textarea {
   margin: 0; }
 
-/* line 19, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 21, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 html body {
   padding: 0;
   margin: 0;
@@ -74,26 +74,26 @@ html body {
   -ms-user-select: 0;
   user-select: 0; }
 
-/* line 24, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 26, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 * *:before *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
-/* line 27, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 29, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 img embed iframe object audio video {
   height: auto;
   max-width: 100%; }
 
-/* line 31, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 33, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 iframe {
   border: 0; }
 
-/* line 34, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 36, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 38, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
+/* line 40, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 td th {
   padding: 0;
   text-align: left; }
@@ -199,16 +199,28 @@ td th {
     font-weight: light;
     text-transform: capitalize;
     word-wrap: break-word; }
-    /* line 36, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+    @media only screen and (max-width: 320px) {
+      /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+      #home .universal__layer .home__text--container {
+        background: yellow; } }
+    @media only screen and (min-width: 321px) and (max-width: 719px) {
+      /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+      #home .universal__layer .home__text--container {
+        background: pink; } }
+    @media only screen and (min-width: 720px) and (max-width: 1024px) {
+      /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+      #home .universal__layer .home__text--container {
+        background: green; } }
+    /* line 44, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h1.home__text--container--mainTitle {
       font-family: "Open Sans", sans-serif;
       font-size: 4.4em;
       line-height: 1.2em; }
-    /* line 42, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+    /* line 50, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h5.home__text--container--mainSubtitle {
       font-family: mainFont__Light, sans-serif;
       font-size: 1.5em; }
-  /* line 46, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+  /* line 54, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
   #home .menu__navbar {
     width: 100%;
     padding: 2em 0;
