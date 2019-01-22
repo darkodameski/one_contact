@@ -19,3 +19,10 @@
   @else if $media == desktops
     @media #{$big-screen}
         @content
+
+  @else if $media == monitors
+    @media #{$extra-big-screen}
+      @content
+
+  @else if $media == iphones
+    @media #{$iPhone-eXpensive__landscape}

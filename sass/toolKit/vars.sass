@@ -4,6 +4,7 @@ $screenInPercentage: 100%
 $screenInFlow: auto
 $defaultFontSize: 1em
 $defaultTextLine: 1em
+$defaultMargin: auto
 
 /// media Queries units \\\
 $orient-port: portrait
@@ -16,6 +17,7 @@ $custom-device-width: min-width
 $custom-device-max-width: max-width
 $max-height-on-device: max-device-height
 
+$extra-small-max-width: 13.6875em
 $min-on-mini-devices: 20em
 $max-on-mini-devices: 30em
 $min-on-medium-devices: 48em
@@ -36,15 +38,12 @@ $customMediaUnit-736: 46em
 
 /////////////  \\\\\\\\\\\\\
 
-/// breakpoints \\\
-$phone-only: "only screen and ($min-width-on-device: $min-on-mini-devices) and ($max-width-on-device: $max-on-mini-devices)"
-$phone-only-landscape__portrait--version-one: "only screen and ($custom-device-width: ($min-on-mini-devices + 0.0625em))"
-$phone-only-landscape__portrait--version-two: "only screen and ($custom-device-max-width: $min-on-mini-devices)"
-
-$tablets-only: "only screen and ($min-width-on-device: $min-on-medium-devices) and ($max-width-on-device: $max-on-medium-devices)"
-
 //breakpoints
-$extra-small-screen: "only screen and (max-width: 219px)"
-$small-screen: "only screen and (min-width: 220px) and (max-width: 320px)"
+$extra-small-screen: "only screen and (max-width: 13.6875em)"
+$small-screen: "only screen and (min-width: 13.75em) and (max-width: 20em)"
 $medium-screen: "only screen and (min-width: 321px) and (max-width: 719px)"
-$big-screen: "only screen and (min-width: 720px) and (max-width: 1024px)"
+$big-screen: "only screen and (min-width: 45em) and (max-width: 64em)"
+$extra-big-screen: "only screen and (min-width: 64em) and (max-width: 85em)"
+
+//breakpoints for iphones
+$iPhone-eXpensive__landscape: "screen and (width: 46em) and (position: landscape)"

@@ -6,19 +6,24 @@
 #info
     max-width: $widthMax
     width: $screenInPercentage
-    height: 700px
+    height: auto
     +boxModel(0)
     position: relative
     background: $sectionColor
+    overflow: hidden
+
     .info__text--container
-        background: blue
-        position: absolute
-        left: 1vw
-        right: 1vw
-        margin: (100px / 2) auto
+        background: blue       
+        margin: (6.25em / 2) 1vw
         text-align: center
         color: $textSubMainColor
         font-stretch: 1em
         font-weight: light
         text-transform: capitalize
         word-wrap: break-word
+
+    .info__content--container
+        height: 70vh
+        background-image: url("..//images/wallpaper/pque-block.jpg")
+        @extend %background
+        margin-bottom: (6.25em / 2)

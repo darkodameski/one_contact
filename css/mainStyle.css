@@ -1,27 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 /* line 3, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
-#home {
+#home, #info .info__content--container {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -67,12 +67,12 @@ html body {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-touch-callout: 0;
-  -webkit-user-select: 0;
-  -khtml-user-select: 0;
-  -moz-user-select: 0;
-  -ms-user-select: 0;
-  user-select: 0; }
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
 
 /* line 26, ../../../Desktop/one_contact/sass/browserCompatibility/miniReset.sass */
 * *:before *:after {
@@ -99,28 +99,28 @@ td th {
   text-align: left; }
 
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 /* line 3, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
-#home {
+#home, #info .info__content--container {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -138,28 +138,28 @@ td th {
   background: linear-gradient(rgba(51, 153, 255, 0.2), rgba(255, 255, 255, 0.3)); }
 
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 /* line 3, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
-#home {
+#home, #info .info__content--container {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -180,7 +180,7 @@ td th {
 #home {
   max-width: 100vw;
   width: 100%;
-  height: 700px;
+  height: 100vh;
   padding: 0;
   margin: 0;
   position: relative;
@@ -189,42 +189,46 @@ td th {
   /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
   #home .universal__layer .home__text--container {
     position: absolute;
+    top: 30%;
+    bottom: 1vh;
     left: 1vw;
     right: 1vw;
-    margin: 200px auto;
+    margin: auto;
     text-align: center;
     color: white;
-    font-stretch: 1em;
-    font-weight: light;
+    font-weight: 100;
     text-transform: capitalize;
-    word-wrap: break-word; }
-    @media only screen and (max-width: 219px) {
+    word-wrap: break-word;
+    white-space: normal; }
+    @media only screen and (max-width: 13.6875em) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
         font-size: 0.3846153846em; } }
-    @media only screen and (min-width: 220px) and (max-width: 320px) {
+    @media only screen and (min-width: 13.75em) and (max-width: 20em) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
-        margin: 225px auto;
         font-size: 0.5em; } }
     @media only screen and (min-width: 321px) and (max-width: 719px) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
-        margin: 250px auto;
         font-size: 0.625em; } }
-    @media only screen and (min-width: 720px) and (max-width: 1024px) {
+    @media only screen and (min-width: 45em) and (max-width: 64em) {
+      /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+      #home .universal__layer .home__text--container {
+        font-size: 0.7142857143em; } }
+    @media only screen and (min-width: 64em) and (max-width: 85em) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
         font-size: 0.8333333333em; } }
-    /* line 57, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+    /* line 63, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h1.home__text--container--mainTitle {
       font-family: "Open Sans", sans-serif;
-      font-size: 4.4em; }
-    /* line 62, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+      font-size: 4.3em; }
+    /* line 68, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h5.home__text--container--mainSubtitle {
-      font-family: mainFont__Light, sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 1.5em; }
-  /* line 66, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+  /* line 72, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
   #home .menu__navbar {
     width: 100%;
     padding: 2em 0;
@@ -233,28 +237,28 @@ td th {
     z-index: 999999999; }
 
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 /* line 3, ../../../Desktop/one_contact/sass/buildingBlocks/inheritance.sass */
-#home {
+#home, #info .info__content--container {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -275,24 +279,27 @@ td th {
 #info {
   max-width: 100vw;
   width: 100%;
-  height: 700px;
+  height: auto;
   padding: 0;
   margin: 0;
   position: relative;
-  background: white; }
-  /* line 13, ../../../Desktop/one_contact/sass/block/_info--partial.sass */
+  background: white;
+  overflow: hidden; }
+  /* line 15, ../../../Desktop/one_contact/sass/block/_info--partial.sass */
   #info .info__text--container {
     background: blue;
-    position: absolute;
-    left: 1vw;
-    right: 1vw;
-    margin: 50px auto;
+    margin: 3.125em 1vw;
     text-align: center;
     color: #333333;
     font-stretch: 1em;
     font-weight: light;
     text-transform: capitalize;
     word-wrap: break-word; }
+  /* line 25, ../../../Desktop/one_contact/sass/block/_info--partial.sass */
+  #info .info__content--container {
+    height: 70vh;
+    background-image: url("..//images/wallpaper/pque-block.jpg");
+    margin-bottom: 3.125em; }
 
 /* line 7, ../../../Desktop/one_contact/sass/mainStyle.sass */
 body {

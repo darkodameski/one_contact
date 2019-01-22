@@ -1,10 +1,10 @@
 @font-face {
-  font-family: mainFont__Regular;
+  font-family: "mainFont__Regular";
   font-family: mainFont__Medium;
   font-family: mainFont__Light;
   font-weight: normal;
   font-style: normal;
-  src: url(fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(..//fonts/titleFont/OpenSans-Regular.ttf) format("ttf"); }
 
 
 

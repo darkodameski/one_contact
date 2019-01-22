@@ -10,7 +10,7 @@
 #home
     max-width: $widthMax
     width: $screenInPercentage
-    height: 700px
+    height: 100vh
     +boxModel(0)
     position: relative
     background: rgb(102, 204, 153)
@@ -23,15 +23,18 @@
         .home__text--container
             //background: blue
             position: absolute
+            top: 30%
+            bottom: 1vh
             left: 1vw
             right: 1vw
-            margin: (400px / 2) auto
+            margin: $defaultMargin
             text-align: center
             color: $textMainColor
-            font-stretch: 1em
-            font-weight: light
+            font-weight: 100
             text-transform: capitalize
             word-wrap: break-word
+            white-space: normal
+
             +respond-to(device)
                 //background: brown
                 h1.home__text--container--mainTitle
@@ -39,28 +42,31 @@
 
             +respond-to(mobile)
                 //background: yellow
-                margin: (450px / 2) auto
                 h1.home__text--container--mainTitle
                 font-size: ($defaultFontSize / 2)
 
             +respond-to(tablets)
                 //background: pink
-                margin: (500px / 2) auto
                 h1.home__text--container--mainTitle
                 font-size: ($defaultFontSize / 1.6)
 
             +respond-to(desktops)
                 //background: green
                 h1.home__text--container--mainTitle
+                font-size: ($defaultFontSize / 1.4)
+
+            +respond-to(monitors)
+                //background: #ff66cc
+                h1.home__text--container--mainTitle
                 font-size: ($defaultFontSize / 1.2)
 
             h1.home__text--container--mainTitle
-                //font-family: mainFont__Regular, sans-serif
+                //font-family: 'mainFont__Regular', sans-serif
                 font-family: 'Open Sans', sans-serif
-                font-size: ($defaultFontSize * 4.4)
+                font-size: ($defaultFontSize * 4.3)
             
             h5.home__text--container--mainSubtitle
-                font-family: mainFont__Light, sans-serif
+                font-family: 'Open Sans', sans-serif
                 font-size: ($defaultFontSize * 1.5)
 
     .menu__navbar
