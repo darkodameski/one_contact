@@ -4,7 +4,11 @@
 @import buildingBlocks/blocks
 
 =respond-to($media)
-  @if $media == mobile 
+  @if $media == device
+    @media #{$extra-small-screen}
+      @content
+
+  @else if $media == mobile 
     @media #{$small-screen}
       @content
   

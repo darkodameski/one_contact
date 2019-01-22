@@ -198,10 +198,14 @@ td th {
     font-weight: light;
     text-transform: capitalize;
     word-wrap: break-word; }
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 219px) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
-        margin: 250px auto;
+        font-size: 0.3846153846em; } }
+    @media only screen and (min-width: 220px) and (max-width: 320px) {
+      /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+      #home .universal__layer .home__text--container {
+        margin: 225px auto;
         font-size: 0.5em; } }
     @media only screen and (min-width: 321px) and (max-width: 719px) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
@@ -212,15 +216,15 @@ td th {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
         font-size: 0.8333333333em; } }
-    /* line 52, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+    /* line 57, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h1.home__text--container--mainTitle {
       font-family: "Open Sans", sans-serif;
       font-size: 4.4em; }
-    /* line 57, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+    /* line 62, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h5.home__text--container--mainSubtitle {
       font-family: mainFont__Light, sans-serif;
       font-size: 1.5em; }
-  /* line 61, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+  /* line 66, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
   #home .menu__navbar {
     width: 100%;
     padding: 2em 0;
