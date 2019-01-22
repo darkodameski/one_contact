@@ -21,7 +21,7 @@
         @extend %layer
 
         .home__text--container
-            background: blue
+            //background: blue
             position: absolute
             left: 1vw
             right: 1vw
@@ -33,19 +33,26 @@
             text-transform: capitalize
             word-wrap: break-word
             +respond-to(mobile)
-                background: yellow
+                //background: yellow
+                margin: (500px / 2) auto
+                h1.home__text--container--mainTitle
+                font-size: ($defaultFontSize / 2)
 
             +respond-to(tablets)
-                background: pink
+                //background: pink
+                margin: (500px / 2) auto
+                h1.home__text--container--mainTitle
+                font-size: ($defaultFontSize / 1.6)
 
             +respond-to(desktops)
-                background: green
+                //background: green
+                h1.home__text--container--mainTitle
+                font-size: ($defaultFontSize / 1.2)
 
             h1.home__text--container--mainTitle
                 //font-family: mainFont__Regular, sans-serif
                 font-family: 'Open Sans', sans-serif
                 font-size: ($defaultFontSize * 4.4)
-                line-height: ($defaultTextLine * 1.2)
             
             h5.home__text--container--mainSubtitle
                 font-family: mainFont__Light, sans-serif

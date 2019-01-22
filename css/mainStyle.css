@@ -188,7 +188,6 @@ td th {
   background-image: url("..//images/wallpaper/banner-bg.jpg"); }
   /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
   #home .universal__layer .home__text--container {
-    background: blue;
     position: absolute;
     left: 1vw;
     right: 1vw;
@@ -202,25 +201,26 @@ td th {
     @media only screen and (max-width: 320px) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
-        background: yellow; } }
+        margin: 250px auto;
+        font-size: 0.5em; } }
     @media only screen and (min-width: 321px) and (max-width: 719px) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
-        background: pink; } }
+        margin: 250px auto;
+        font-size: 0.625em; } }
     @media only screen and (min-width: 720px) and (max-width: 1024px) {
       /* line 23, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
       #home .universal__layer .home__text--container {
-        background: green; } }
-    /* line 44, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+        font-size: 0.8333333333em; } }
+    /* line 52, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h1.home__text--container--mainTitle {
       font-family: "Open Sans", sans-serif;
-      font-size: 4.4em;
-      line-height: 1.2em; }
-    /* line 50, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+      font-size: 4.4em; }
+    /* line 57, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
     #home .universal__layer .home__text--container h5.home__text--container--mainSubtitle {
       font-family: mainFont__Light, sans-serif;
       font-size: 1.5em; }
-  /* line 54, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
+  /* line 61, ../../../Desktop/one_contact/sass/block/_home--partial.sass */
   #home .menu__navbar {
     width: 100%;
     padding: 2em 0;
